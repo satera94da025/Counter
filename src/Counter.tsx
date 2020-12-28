@@ -20,15 +20,16 @@ function Counter(props: PropsType) {
         props.resCount()
     }
 
-    return (<div className={s.counterBlock}>
-        <div className={s.counter}>
-            <a className={props.count === props.maxValue ? s.maxValue : ''}>{props.error || props.count} </a>
-        </div>
-        <div className={s.buttons}>
-            <button className={s.button} disabled={props.count === props.maxValue} onClick={addCount}>inc</button>
-            <button className={s.button} onClick={resCount}>reset</button>
-        </div>
-    </div>)
+    return (
+        <div className={s.counterBlock}>
+            <div className={s.counter}>
+                <a className={props.count === props.maxValue ? s.maxValue : ''}>{props.error || props.count} </a>
+            </div>
+            <div className={s.buttons}>
+                <button className={s.button} disabled={props.count === props.maxValue} onClick={addCount}>inc</button>
+                <button className={s.button} onClick={resCount}>reset</button>
+            </div>
+        </div>)
 }
 
 export default Counter

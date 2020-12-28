@@ -25,7 +25,6 @@ function SecondCounter(props: PropsType) {
     function maxChangeHandler(e: ChangeEvent<HTMLInputElement>) {
         setMax(e.currentTarget.valueAsNumber)
         props.check(start, e.currentTarget.valueAsNumber)
-
     }
 
     const onClickHandler = () => {

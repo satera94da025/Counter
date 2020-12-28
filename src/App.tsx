@@ -18,7 +18,6 @@ function App() {
 
     }
 
-
     function setStartValue(start: number) {
         localStorage.setItem('start', JSON.stringify(start))
     }
